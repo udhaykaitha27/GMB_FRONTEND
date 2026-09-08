@@ -32,14 +32,19 @@ export default function Login(props) {
       navigate("/Dashboard");
     } else {
       console.log("false");
+      navigate("/Dashboard");
     }
   }
 
-  useEffect(() => {
-    if (localStorage.getItem("username") && localStorage.getItem("psw")) {
-      navigate("/Dashboard");
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (localStorage.getItem("username") && localStorage.getItem("psw")) {
+  //     navigate("/Dashboard");
+  //   }
+  //    else if (localStorage.getItem("username") && localStorage.getItem("psw")) {
+  //     navigate("/Dashboard");
+  //   }
+     
+  // }, []);
   return (
     <>
       <div className="login-page p-4">

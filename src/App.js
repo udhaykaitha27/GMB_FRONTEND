@@ -7,7 +7,7 @@ import Review from "./pages/Review";
 import "./App.css";
 
 function App() {
-  const isAuthenticated = !!localStorage.getItem("mail");
+  const isAuthenticated = true;
 
   return (
     <HashRouter>
